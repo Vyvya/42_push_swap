@@ -53,6 +53,5 @@ void			split_to_all(t_all *all, char **nbr);
 void			fill_all(t_node **head, t_node **tail, int value);
 void			ft_atoi_check(char *str);
 
-void			sa(t_all *all);
 
 # endif
