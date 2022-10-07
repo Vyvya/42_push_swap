@@ -6,7 +6,7 @@
 /*   By: vgejno <vgejno@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 19:02:12 by vgejno            #+#    #+#             */
-/*   Updated: 2022/10/07 11:17:58 by vgejno           ###   ########.fr       */
+/*   Updated: 2022/10/07 11:38:17 by vgejno           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,8 @@ typedef struct s_all
 t_all			*init(t_all *all);
 void			check_args(t_all *all, int argc, char **argv);
 void			split_to_all(t_all *all, char **nbr);
-void			fill_all(t_node *head,
-				&all->a_tail, ft_atoi_check(digit[j]));
-
+void			fill_all(t_node **head, t_node **tail, int value);
+void			ft_atoi_check(char *str);
 
 void			sa(t_all *all);
 
