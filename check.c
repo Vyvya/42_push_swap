@@ -1,58 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   functions1.c                                       :+:      :+:    :+:   */
+/*   check.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vgejno <vgejno@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 19:34:29 by vgejno            #+#    #+#             */
-/*   Updated: 2022/10/08 16:53:50 by vgejno           ###   ########.fr       */
+/*   Created: 2022/10/07 12:38:01 by vgejno            #+#    #+#             */
+/*   Updated: 2022/10/07 12:41:31 by vgejno           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <push_swap.h>
+#include "push_swap.h"
 
-void	sa(t_stack *stack)
+long long int	ft_atoi_check(char *str)
 {
-	t_node	*temp;
-	int		i;
-	int		j;
-
-	temp = NULL;
-	
-}
-
-void	sb(t_stack *stack)
-{
-
-}
-
-void	pa(t_stack *stack)
-{
-	
-}
-
-void	pb(t_stack *stack)
-{
-	
-}
-
-void	ra(t_stack *stack)
-{
-	
-}
-
-void	rb(t_stack *stack)
-{
-	
-}
-
-void	rra(t_stack *stack)
-{
-	
-}
-
-void	rrb(t_stack *stack)
-{
-	
+	int				i;
+	int				sign;
+	long long int	value;
 }

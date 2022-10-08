@@ -6,7 +6,7 @@
 /*   By: vgejno <vgejno@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 19:02:12 by vgejno            #+#    #+#             */
-/*   Updated: 2022/10/07 11:38:17 by vgejno           ###   ########.fr       */
+/*   Updated: 2022/10/08 16:51:13 by vgejno           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,12 @@ typedef struct s_node
 {
 	int	num;	/*index not sorted*/
 	int	index;	/*index sorted*/
-	int	flag;
 	struct s_node	*next;
 	struct s_node	*prev;
-}				t_node;
+}	t_node;
 
 /*struct of *stack a et stack b, which are double connected list*/
-typedef struct s_all
+typedef struct s_stack
 {
 	t_node	*a_head;
 	t_node	*a_tail;
@@ -40,18 +39,19 @@ typedef struct s_all
 	int		max_bites;
 	int		a_len; /*length of circular connected lists*/
 	int		b_len;
-}	t_all;
+}	t_stack;
 
 # define MIN_INT -2147483648
 # define MAX_INT 2147483647
 
 //operations
 
-t_all			*init(t_all *all);
-void			check_args(t_all *all, int argc, char **argv);
-void			split_to_all(t_all *all, char **nbr);
-void			fill_all(t_node **head, t_node **tail, int value);
-void			ft_atoi_check(char *str);
+t_stack			*init(t_stack *stack);
+void			check_args(t_stack *stack, int argc, char **argv);
+void			split_to_stack(t_stack *stack, char **nbr);
+void			fill_stack(t_node **head, t_node **tail, int value);
+long long int	ft_atoi_check(char *str);
 
+void			error(void);
 
 # endif
